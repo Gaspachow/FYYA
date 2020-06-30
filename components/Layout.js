@@ -24,7 +24,7 @@ function Header() {
 
     return(
   <Navbar style={navStyle} variant="dark" expand="xl">
-    <Navbar.Brand href="#home" className="mr-auto ml-auto" style={{maxWidth: "80%"}}>
+    <Navbar.Brand href="/" className="mr-auto ml-auto" style={{maxWidth: "80%"}}>
       <img 
         src="/fyya-banner.png"
         style={imgStyle}
@@ -34,7 +34,7 @@ function Header() {
     <Navbar.Toggle aria-controls="basic-navbar-nav" />
     <Navbar.Collapse id="basic-navbar-nav">
       <Nav className="ml-auto">
-        <Nav.Link style={navItem} href="#home">ACTUALITÉS</Nav.Link>
+        <Nav.Link style={navItem} href="/actu">ACTUALITÉS</Nav.Link>
         <Nav.Link style={navItem} href="#link1">ADHÉRER</Nav.Link>
         <NavDropdown style={navDropItem} bg="primary" variant="dark" title="RESSOURCES" id="basic-nav-dropdown">
           <NavDropdown.Item href="#action/3.1">Apprendre le yoyo</NavDropdown.Item>
@@ -85,20 +85,21 @@ function Footer() {
         <Navbar.Text style={{color: "#AAA", fontSize: "min(2vw, 0.875em)"}}>
         © 2020 Association Française de Yoyo. All rights reserved.
         </Navbar.Text>
-        <a href="https://www.facebook.com/franceyoyoassociation/" style={socialStyle} class="view overlay zoom ml-auto fa fa-facebook"></a>
-        <a href="https://www.youtube.com/channel/UCHBBzg5p5zuAMe9vD01fX8w/featured" style={socialStyle} class="view overlay zoom fa fa-youtube"></a>
-        <a href="https://vimeo.com/user19541937" style={socialStyle} class="view overlay zoom fa fa-vimeo"></a>
+        <a href="https://www.facebook.com/franceyoyoassociation/" style={socialStyle} className="view overlay zoom ml-auto fa fa-facebook"></a>
+        <a href="https://www.youtube.com/channel/UCHBBzg5p5zuAMe9vD01fX8w/featured" style={socialStyle} className="view overlay zoom fa fa-youtube"></a>
+        <a href="https://vimeo.com/user19541937" style={socialStyle} className="view overlay zoom fa fa-vimeo"></a>
       </Navbar.Collapse>
     </Navbar>
   )
 }
 
 
-function Layout() {
+function Layout({children}) {
   return(
     <>
     <div style={{minHeight: "calc(100vh - 60px)"}}>
       <Header/>
+      {children}
     </div>
       <Footer/>
     </>
