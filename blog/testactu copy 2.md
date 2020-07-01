@@ -1,6 +1,6 @@
 ---
 title: 'Article teste'
-date: '2018-06-30'
+date: '2008-02-23'
 ---
 
 Testing d'un article...
