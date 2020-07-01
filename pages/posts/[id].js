@@ -1,6 +1,9 @@
 import Layout from '../../components/Layout'
 import Container from 'react-bootstrap/Container'
 import { getAllPostIds, getPostData } from '../../lib/posts'
+import Head from 'next/head'
+import Link from 'next/link'
+import Date from '../../components/Date'
 
 export async function getStaticPaths() {
     const paths = getAllPostIds()
@@ -11,7 +14,7 @@ export async function getStaticPaths() {
   }
 
 export async function getStaticProps({ params }) {
-const postData = getPostData(params.id)
+const postData = await getPostData(params.id)
 return {
     props: {
     postData
@@ -20,13 +23,28 @@ return {
 }
 
 export default function Post({postData}) {
-  return <Layout>
-      <Container>
-        {postData.title}
+
+    const containerStyle = {
+        marginTop: 20
+    }
+    return (
+    <Layout>
+        <Head>
+            <title>{postData.title}</title>
+        </Head>
+        <Container style={containerStyle}>
+        <h1>{postData.title}</h1> 
         <br />
-        {postData.id}
+        <Date dateString={postData.date}/>
         <br />
-        {postData.date}
-      </Container>
-  </Layout>
+        <br />
+        <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
+        <h5>
+        <Link href="/actualites">
+            <a>← Retour</a>
+        </Link>
+        </h5>
+        </Container>
+    </Layout>
+  )
 }

@@ -34,7 +34,7 @@ function Header() {
     <Navbar.Toggle aria-controls="basic-navbar-nav" />
     <Navbar.Collapse id="basic-navbar-nav">
       <Nav className="ml-auto">
-        <Nav.Link style={navItem} href="/actu">ACTUALITÉS</Nav.Link>
+        <Nav.Link style={navItem} href="/actualites">ACTUALITÉS</Nav.Link>
         <Nav.Link style={navItem} href="#link1">ADHÉRER</Nav.Link>
         <NavDropdown style={navDropItem} bg="primary" variant="dark" title="RESSOURCES" id="basic-nav-dropdown">
           <NavDropdown.Item href="#action/3.1">Apprendre le yoyo</NavDropdown.Item>
