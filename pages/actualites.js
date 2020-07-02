@@ -3,6 +3,7 @@ import Layout from '../components/Layout'
 import Date from '../components/Date'
 import Link from 'next/link'
 import Container from 'react-bootstrap/Container'
+import Head from "next/head"
 
 export async function getStaticProps() {
     const allPostsData = getSortedPostsData()
@@ -16,23 +17,36 @@ export async function getStaticProps() {
 export default function Home({ allPostsData }) {
   
   const containerStyle = {
-    marginTop: 20
+    marginTop: 20,
+    fontSize: "1.5em"
   }
+
+  const newsCont = {
+    padding: 10
+  }
+
   return (
       <Layout>
+        <Head>
+          <title>Actualité FYYA</title>
+        </Head>
         <Container style={containerStyle}>
-          <h2 >Actualité</h2>
+          <Container>
+            <h1>Actualité FYYA</h1>
+          </Container>
           <ul>
               {allPostsData.map(({ id, date, title }) => (
-              <li key={id}>
-                <Link href="/posts/[id]" as={`/posts/${id}`}>
-                  <a>{title}</a>
-                </Link>
-                <br />
-                <small>
-                  <Date dateString={date} />
-                </small>
-              </li>
+              <Container style={newsCont}>
+                <li key={id}>
+                  <Link href="/posts/[id]" as={`/posts/${id}`}>
+                    <a>{title}</a>
+                  </Link>
+                  <br />
+                  <small>
+                    <Date dateString={date} />
+                  </small>
+                </li>
+              </Container>
               ))}
           </ul>
         </Container>

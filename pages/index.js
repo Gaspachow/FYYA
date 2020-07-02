@@ -3,6 +3,10 @@ import Layout from "../components/Layout"
 
 export default function Home() {
   return (
-    <Layout />
+    <Layout>
+      <Head>
+        <title>Accueil - FYYA</title>
+      </Head>
+    </Layout>
   )
 }

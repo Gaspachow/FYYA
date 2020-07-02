@@ -35,7 +35,7 @@ function Header() {
     <Navbar.Collapse id="basic-navbar-nav">
       <Nav className="ml-auto">
         <Nav.Link style={navItem} href="/actualites">ACTUALITÉS</Nav.Link>
-        <Nav.Link style={navItem} href="#link1">ADHÉRER</Nav.Link>
+        <Nav.Link style={navItem} href="/adherer">ADHÉRER</Nav.Link>
         <NavDropdown style={navDropItem} bg="primary" variant="dark" title="RESSOURCES" id="basic-nav-dropdown">
           <NavDropdown.Item href="#action/3.1">Apprendre le yoyo</NavDropdown.Item>
           <NavDropdown.Item href="#action/3.2">Boutiques en ligne</NavDropdown.Item>
@@ -73,7 +73,7 @@ function Footer() {
     }
 
   return(
-    <Navbar style={footStyle} className="sticky-bottom">
+    <Navbar style={footStyle}>
       <Navbar.Brand href="#home">
           <img 
           src="/Icone-FYYA.png"

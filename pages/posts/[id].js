@@ -34,11 +34,11 @@ export default function Post({postData}) {
         </Head>
         <Container style={containerStyle}>
         <h1>{postData.title}</h1> 
-        <br />
         <Date dateString={postData.date}/>
         <br />
         <br />
-        <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
+        <div className="blog-content" dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
+        <br />
         <h5>
         <Link href="/actualites">
             <a>← Retour</a>
