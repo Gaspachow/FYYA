@@ -20,9 +20,11 @@
 .btn-orange {
     background-color: darkorange;
     color: white;
+    font-weight: bold;
   }
 
 .btn-orange:hover {
     background-color: orange;
     color: white;
+    font-weight: bold;
   }

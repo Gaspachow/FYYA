@@ -14,7 +14,7 @@ const content = {
                 Il nous permet également de renouveler le matériel nécessaire à la compétition, d’acheter des yoyos pour nos initiations, ainsi que toutes autres activités en lien avec la pratique du yoyo.
 
                 L'adhésion à la FYYA est nécessaire pour participer au championnat de France, organisé chaque année.`,
-  buttonCta: "Devenir Adhérant",
+  buttonCta: "Adhérer",
   buttonUrl: "https://www.helloasso.com/associations/france-yoyo-association/adhesions/adhesion-a-l-association-francaise-de-yoyo-2020"
 }
 
@@ -30,6 +30,7 @@ export default function Home() {
         <p style={{fontSize: 18, whiteSpace: "pre-line"}}>{content.textContent}</p>
         <Container class="text-center p-4">
           <Button variant="orange" size="lg" href={content.buttonUrl}>{content.buttonCta}</Button>
+          <p>Propulsé par <a href="https://www.helloasso.com" rel="nofollow">HelloAsso</a></p>
         </Container>
       </Container>
     </Layout>
