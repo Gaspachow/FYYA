@@ -74,7 +74,7 @@ function Footer() {
 
   return(
     <Navbar style={footStyle}>
-      <Navbar.Brand href="#home">
+      <Navbar.Brand href="/">
           <img 
           src="/Icone-FYYA.png"
           style={{maxHeight: "50px"}}
