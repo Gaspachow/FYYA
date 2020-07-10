@@ -31,7 +31,7 @@ export default function Home() {
         <Container class="text-center p-4">
           <Button variant="orange" size="lg" href={content.buttonUrl}>{content.buttonCta}</Button>
           <p>Propulsé par <a href="https://www.helloasso.com" rel="nofollow">HelloAsso</a></p>
-        </Container>
+      </Container>
       </Container>
     </Layout>
   )

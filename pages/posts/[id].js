@@ -40,7 +40,7 @@ export default function Post({postData}) {
         <div className="blog-content" dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
         <br />
         <h5>
-        <Link href="/actualites">
+        <Link href="/">
             <a>← Retour</a>
         </Link>
         </h5>

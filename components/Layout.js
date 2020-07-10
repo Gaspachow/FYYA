@@ -15,15 +15,15 @@ function Header() {
   }
 
   const navItem = {
-    paddingRight: "30px"
+    paddingRight: "25px"
   }
 
   const navDropItem = {
-    paddingRight: "20px"
+    paddingRight: "12px"
   }
 
     return(
-  <Navbar style={navStyle} variant="dark" expand="xl">
+  <Navbar style={navStyle} variant="dark" expand="lg">
     <Navbar.Brand href="/" className="mr-auto ml-auto" style={{maxWidth: "80%"}}>
       <img 
         src="/fyya-banner.png"
@@ -34,7 +34,6 @@ function Header() {
     <Navbar.Toggle aria-controls="basic-navbar-nav" />
     <Navbar.Collapse id="basic-navbar-nav">
       <Nav className="ml-auto">
-        <Nav.Link style={navItem} href="/actualites">ACTUALITÉS</Nav.Link>
         <Nav.Link style={navItem} href="/adherer">ADHÉRER</Nav.Link>
         <NavDropdown style={navDropItem} bg="primary" variant="dark" title="RESSOURCES" id="basic-nav-dropdown">
           <NavDropdown.Item href="#action/3.1">Apprendre le yoyo</NavDropdown.Item>
