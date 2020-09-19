@@ -19,7 +19,7 @@ export default function Home({allPostsData}) {
   return (
     <Layout>
       <Head>
-        <title>Accueil - FYYA</title>
+        <title>France YoYo Association - Accueil</title>
       </Head>
       <Container fluid className="p-0">
         <Carousel fluid>

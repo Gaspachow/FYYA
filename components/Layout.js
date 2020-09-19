@@ -2,6 +2,7 @@ import Navbar from "react-bootstrap/Navbar"
 import Nav from "react-bootstrap/Nav"
 import NavDropdown from "react-bootstrap/NavDropdown"
 import Container from "react-bootstrap/Container"
+import Link from "next/link"
 
 function Header() {
 
@@ -82,7 +83,7 @@ function Footer() {
       <Navbar.Toggle />
       <Navbar.Collapse className="justify-content-start">
         <Navbar.Text style={{color: "#AAA", fontSize: "min(2vw, 0.875em)"}}>
-        © 2020 Association Française de Yoyo. All rights reserved.
+        © 2020 Association Française de Yoyo. All rights reserved. | <Link href="mentions-legales"><a style={{color: "#AAA"}}>Mentions légales</a></Link>
         </Navbar.Text>
         <a href="https://www.facebook.com/franceyoyoassociation/" style={socialStyle} className="view overlay zoom ml-auto fa fa-facebook"></a>
         <a href="https://www.youtube.com/channel/UCHBBzg5p5zuAMe9vD01fX8w/featured" style={socialStyle} className="view overlay zoom fa fa-youtube"></a>
