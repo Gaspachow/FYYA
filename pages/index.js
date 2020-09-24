@@ -55,7 +55,7 @@ export default function Home({allPostsData}) {
          <Actu allPostsData={allPostsData}/>
           <Container className="text-center" style={{width: 400, marginTop: 20, marginBottom: 20}}>
             <h1>Qui sommes-nous?</h1>
-            <p>placeholder blablablablaowonwnfownfownfowf wfonwofnwofnwonfowf wofnwonfowfnowfnowfnwofowfn ownfownfownfownfownfownfownfownfownfownf wofnwofnwonfownfownfownfwofn</p>
+            <p>placeholder</p>
           </Container>
         </Container>
       </Container>
