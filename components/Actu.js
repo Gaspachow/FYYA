@@ -20,8 +20,8 @@ export default function Actu({ allPostsData }) {
           </Container>
           <ListGroup>
               {allPostsData.map(({ id, date, title }) => (
-                <Link href="/posts/[id]" as={`/posts/${id}`}>
-                  <ListGroup.Item action hover>
+                <Link href="/posts/[id]" as={`/posts/${id}`} key={id}>
+                  <ListGroup.Item action hover="true">
                     <p>{title}</p>
                     <small>
                       <Date dateString={date} />

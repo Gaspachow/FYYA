@@ -26,9 +26,9 @@ export default function Home() {
       </Head>
       <ImgTitle imgUrl="/pages-img/adherer.jpg" imgTitle={content.imageTitle} />
       <Container>
-        <p class="h1 text-center p-4">{content.secondTitle}</p>
+        <p className="h1 text-center p-4">{content.secondTitle}</p>
         <p style={{fontSize: 18, whiteSpace: "pre-line"}}>{content.textContent}</p>
-        <Container class="text-center p-4">
+        <Container className="text-center p-4">
           <Button variant="orange" size="lg" href={content.buttonUrl}>{content.buttonCta}</Button>
           <p>Propulsé par <a href="https://www.helloasso.com" rel="nofollow">HelloAsso</a></p>
       </Container>

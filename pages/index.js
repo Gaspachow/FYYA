@@ -22,7 +22,7 @@ export default function Home({allPostsData}) {
         <title>France YoYo Association - Accueil</title>
       </Head>
       <Container fluid className="p-0">
-        <Carousel fluid>
+        <Carousel fluid="true">
         <Carousel.Item>
             <Image
               className="d-block w-100"

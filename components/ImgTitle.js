@@ -17,7 +17,7 @@ export default function ImgTitle({imgUrl, imgTitle}) {
       return (
             <div style={titleContainerStyle}>
               <div className="title-bg d-flex">
-                <p class="h1 m-auto page-title" style={titleStyle}>{imgTitle}</p>
+                <p className="h1 m-auto page-title" style={titleStyle}>{imgTitle}</p>
               </div>
             </div>
       )
