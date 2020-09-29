@@ -24,7 +24,7 @@ export default function Home() {
       <Head>
         <title>{content.tabTitle}</title>
       </Head>
-      <ImgTitle imgUrl="/pages-img/adherer.jpg" imgTitle={content.imageTitle} />
+      <ImgTitle imgUrl="/pages-img/adherer.jpg" imgTitle={content.imageTitle} imgHeight="40vh"/>
       <Container>
         <p className="h1 text-center p-4">{content.secondTitle}</p>
         <p style={{fontSize: 18, whiteSpace: "pre-line"}}>{content.textContent}</p>

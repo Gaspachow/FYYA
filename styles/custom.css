@@ -2,6 +2,18 @@
     opacity: 0.5;
 }
 
+.fa {
+  transition: all .2s ease-in-out;
+}
+
+.hoverItem {
+  transition: all .2s ease-in-out;
+}
+
+.hoverItem:hover {
+  transform: scale(1.1);
+}
+
 .blog-content > p > img {
     max-height: 35vh;
     max-width: 90vw;

@@ -27,7 +27,7 @@ export default function Home({allPostsData}) {
             <Image
               className="d-block w-100"
               src="/pages-img/index/carousel1.jpg"
-              alt="Third slide"
+              alt="Photo de groupe de la FYYA"
               style={{minHeight: "230px", height: "33vh", objectFit: "cover", filter: "brightness(60%)"}}
               
             />
@@ -41,7 +41,7 @@ export default function Home({allPostsData}) {
             <Image
               className="d-block w-100"
               src="/pages-img/index/carousel2.jpg"
-              alt="First slide"
+              alt="One Drop Intro du pack FYYA 2020"
               style={{minHeight: "230px", height: "33vh", objectFit: "cover", filter: "brightness(60%)"}}
               
             />
@@ -51,7 +51,7 @@ export default function Home({allPostsData}) {
             </a>
           </Carousel.Item>
         </Carousel>
-        <Container className="d-flex flex-wrap-reverse" fluid>
+        <Container className="d-flex flex-wrap-reverse">
          <Actu allPostsData={allPostsData}/>
           <Container className="text-center" style={{width: 400, marginTop: 20, marginBottom: 20}}>
             <h1>Qui sommes-nous?</h1>

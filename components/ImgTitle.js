@@ -1,5 +1,5 @@
 
-export default function ImgTitle({imgUrl, imgTitle}) {
+export default function ImgTitle({imgUrl, imgTitle, imgHeight}) {
 
     const titleStyle = {
         textAlign: "center",
@@ -11,7 +11,7 @@ export default function ImgTitle({imgUrl, imgTitle}) {
         background: `url("${imgUrl}") top center`,
         backgroundSize: "cover",
         width: "100%",
-        height: "40vh"
+        height: imgHeight
       }
     
       return (

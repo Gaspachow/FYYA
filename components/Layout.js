@@ -38,7 +38,7 @@ function Header() {
         <Nav.Link style={navItem} href="/adherer">ADHÉRER</Nav.Link>
         <NavDropdown style={navDropItem} bg="primary" variant="dark" title="RESSOURCES" id="basic-nav-dropdown">
           <NavDropdown.Item href="#action/3.1">Apprendre le yoyo</NavDropdown.Item>
-          <NavDropdown.Item href="#action/3.2">Boutiques en ligne</NavDropdown.Item>
+          <NavDropdown.Item href="/boutiques">Boutiques en ligne</NavDropdown.Item>
           <NavDropdown.Item href="#action/3.3">À l’étranger</NavDropdown.Item>
         </NavDropdown>
         <NavDropdown style={navDropItem} title="ARCHIVES" id="basic-nav-dropdown2">
