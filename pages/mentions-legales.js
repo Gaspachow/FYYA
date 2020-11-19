@@ -9,17 +9,10 @@ const content = {
   secondTitle: "Mentions légales",
   textContent: 
   `FRANCE YOYO ASSOCIATION est une association loi 1901 créée le 6 juin 2001 à Villejuif.
-  Son siège social est situé au 47 rue de Pommard – 75012 Paris – France. 
-  Téléphone : +33 (0)6 59 75 22 72
   Directeur de publication : Clément Bertaux
   SIRET : 750 483 943 00015
-  RNA : W943002804
   
-  Veuillez envoyer tout courrier adressé à France Yoyo Association à :
-  Clément Bertaux
-  47 rue de Pommard
-  75012 Paris
-  France
+  adresse de contact : franceyoyoassociation[at]gmail.com
   
   Franceyoyo.fr n’enregistre aucune information sur ses visiteurs.
   
