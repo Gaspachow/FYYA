@@ -24,7 +24,7 @@ function StoreImg({storeImg, storeLink, border}) {
   return(
     <Container 
       className="d-flex justify-content-center align-items-center hoverItem"
-      style={{minHeight: "100px", marginBottom: 20, flexBasis: "30%"}}
+      style={{minHeight: "10`0px", marginBottom: 20, flexBasis: "30%"}}
     >
       <a href={storeLink} target="_blank">
         <Image
@@ -52,7 +52,7 @@ export default function Home() {
           <StoreImg storeLink="https://www.slusny.net/" storeImg="slusny.png"/>
           <StoreImg storeLink="https://www.latiendadelyoyo.com/" storeImg="latienda.jpg"/>
           <StoreImg storeLink="http://www.yoyovillage.co.uk/" storeImg="yoyovillage.jpg"/>
-          <StoreImg storeLink="https://www.yoyoraven.com/" storeImg="yoyoraven.png"/>
+          <StoreImg storeLink="https://www.yo-shop.de/index.php?language=en" storeImg="yoshop.png"/>
         </Container>
         <hr></hr>
         <p className="h1 text-center p-4">{content.secondTitle}</p>
